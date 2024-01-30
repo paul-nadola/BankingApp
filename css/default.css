@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Main body styling */
+
+body{
+    height: 100vh;
+    background-image: url("../images/mainBackground.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* card sample text */
+#sample-text-card {
+    margin: 0px 100px;
+    font-family: Comfortaa;
+}
+
+#sample-text-card h1{
+    font-size: 65px;
+}
+
+#sample-text-card p{
+    font-size: 14px;
+}
+
+.button-wrapper a{
+    padding: 15px;
+    width: 200px;
+    color: white;
+}
+
+.register{
+    margin-right: 7px;
+    background-color: #ff4e00;
+    border: 1px solid black;
+}
+.login{
+    background-color: #ff8114;
+    border: 1px solid brown;
+}
+
+
+
+
+
+
