@@ -42,8 +42,18 @@ body{
     font-weight: 600;
 }
 
+/* Transact button */
+#transact-btn {
+    background-color: #ff8114;
+    border: 1px solid brown;
 
+}
 
-
+/* Add account button */
+#add-account-btn{
+    background-color: #ff4e00;
+    border: 1px solid black;
+    color: white;
+}
 
 
