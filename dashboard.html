@@ -50,12 +50,55 @@
     <!-- Start of Transact ffcanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Transact</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <!-- Offcanvas: Transact Body -->
         <div class="offcanvas-body">
-            Transaction form container
+            <small class="card-text">
+                Choose an option below to perform a transaction
+            </small>
+            <!--Transaction type Drop Down List-->
+                <select name="transact-type" class="form-control my-3" id="">
+                    <option value="">--Select Transaction Type--</option>
+                    <option value="payment">Payment</option>
+                    <option value="transfer">Transfer</option>
+                    <option value="deposit">Deposit</option>
+                    <option value="withdrawal">Withdrawal</option>
+                </select>
+            <!--End of Transaction type Drop Down List-->
+
+            <!-- Card Payment Card -->
+                <div class="card payment-card">
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <label for="">Beneficiary Account Holder</label>
+                            <input type="text" name="beneficiary" class="form-control" placeholder="Enter Account holder / Beneficiary name">
+                        </div>
+                        <!--End of Form Group -->
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <label for="">Beneficiary Account number</label>
+                            <input type="text" name="account_number" class="form-control" placeholder="Enter Account holder / Beneficiary number">
+                        </div>
+                        <!--End of Form Group -->
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="">Select Account</label>
+                            <!--Select Account Options-->
+                            <select name="account_id" class="form-control my-3" id="">
+                                <option value="">--Select Account--</option>
+                            </select>
+                            <!--End of Select Account Options-->
+                        </div>
+                        <!-- End of Form Group -->
+                    </div>
+                    <!--End of Card Body -->
+                </div>
+            <!--End of Card Payment Card -->
         </div>
         <!--End of Offcanvas: Transact Body -->
     </div>
