@@ -59,7 +59,7 @@
                 Choose an option below to perform a transaction
             </small>
             <!--Transaction type Drop Down List-->
-                <select name="transact-type" class="form-control my-3" id="">
+                <select name="transact-type" class="form-control my-3" id="transact-type">
                     <option value="">--Select Transaction Type--</option>
                     <option value="payment">Payment</option>
                     <option value="transfer">Transfer</option>
@@ -95,10 +95,79 @@
                             <!--End of Select Account Options-->
                         </div>
                         <!-- End of Form Group -->
+
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <label for="">Reference</label>
+                            <input type="text" name="reference" class="form-control" placeholder="Enter Reference">
+                        </div>
+                        <!--End of Form Group -->
+
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <label for="">Enter Payment Amount</label>
+                            <input type="text" name="payment_amount" class="form-control"
+                                placeholder="Enter Payment Amount">
+                        </div>
+                        <!--End of Form Group -->
+                        
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <button id="" class="btn btn-md transact-btn">Pay</button>
+                        </div>
+                        <!--End of Form Group -->
+                        
                     </div>
                     <!--End of Card Body -->
                 </div>
             <!--End of Card Payment Card -->
+
+                <!-- Card transfer Card -->
+                <div class="card transfer-card">
+                    <!-- Card Body -->
+                    <div class="card-body">
+                       
+                
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="">Select Account</label>
+                            <!--Select Account Options-->
+                            <select name="account_id" class="form-control my-3" id="">
+                                <option value="">--Select Account--</option>
+                            </select>
+                            <!--End of Select Account Options-->
+                        </div>
+                        <!-- End of Form Group -->
+
+                        <!-- Form Group -->
+                        <div class="form-group">
+                            <label for="">Select Account</label>
+                            <!--Select Account Options-->
+                            <select name="account_id" class="form-control my-3" id="">
+                                <option value="">--Select Account--</option>
+                            </select>
+                            <!--End of Select Account Options-->
+                        </div>
+                        <!-- End of Form Group -->
+                                
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <label for="">Enter transfer Amount</label>
+                            <input type="text" name="transfer_amount" class="form-control" placeholder="Enter transfer Amount">
+                        </div>
+                        <!--End of Form Group -->
+                
+                        <!-- Form Group -->
+                        <div class="form-group mb-2">
+                            <button id="" class="btn btn-md transact-btn">Pay</button>
+                        </div>
+                        <!--End of Form Group -->
+                
+                    </div>
+                    <!--End of Card Body -->
+                </div>
+                <!--End of Card transfer Card -->
+
         </div>
         <!--End of Offcanvas: Transact Body -->
     </div>
@@ -234,5 +303,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

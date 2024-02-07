@@ -64,3 +64,33 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.transact-btn{
+    background-color: #ff4e00;
+    border: 1px solid black;
+    color: white;
+}
+
+/* Card Payment Card */
+
+.payment-card{
+    display: none;
+}
+
+/* Card Transfer Card */
+
+.transfer-card {
+    display: none;
+}
+
+/* Card Deposit Card */
+
+.deposit-card {
+    display: none;
+}
+
+/* Card withdraw Card */
+
+.withdraw-card {
+    display: none;
+}
