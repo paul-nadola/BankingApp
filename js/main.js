@@ -8,8 +8,10 @@ const transferCard = document.querySelector(".transfer-card");
 const depositCard = document.querySelector(".deposit-card");
 const withdrawCard = document.querySelector(".withdraw-card");
 
+
+//Check for transaction type event listener
 transactType.addEventListener("change", ()=>{
-    //Check for Transaction Type
+    //Check for Transaction Type and Display form
 
     switch (transactType.value) {
         case "payment":
@@ -39,7 +41,10 @@ transactType.addEventListener("change", ()=>{
             transferCard.style.display = "none";
             paymentCard.style.display = "none";
         break;
-        default:
-            break;
+        // default:
+        //     break;
+        //End of Check for Transaction Type and Display form
     }
 });
+//End of Check for transaction type event listener
+
